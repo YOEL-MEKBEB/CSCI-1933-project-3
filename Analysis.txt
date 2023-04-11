@@ -1,0 +1,27 @@
+    Method                                    ArrayList Runtime                 LinkedList Runtime                                  Explanation
+T get(int index)                                  O(1)                                O(n)                                  get(int index) in the ArrayList uses the index to 
+                                                                                                                            directly go to the index of the array and no looping
+                                                                                                                            or searching is required, so the time complexity is
+                                                                                                                            O(1). To access an element at a certain index of the
+                                                                                                                            LinkedList, the list must be looped through index 
+                                                                                                                            number of times. This inturn gives a time complexity
+                                                                                                                            of O(index).
+
+boolean rotate(int n)                             O(n^2)                              O(n)                                  rotate(int n) in the ArrayList requires a loop to 
+                                                                                                                            rotate the list 1 time which is nested in another
+                                                                                                                            loop to rotate it n times. In the linkedList, only
+                                                                                                                            one loop is required to set the pointer to the 
+                                                                                                                            (size-n)th element, which is an O(n)
+                          
+void merge(List<T>otherList)                      O(n)                                O(n)                                  merge(List<T>otherList) has an O(n) time complexity
+                                                                                                                            on both ArrayList and LinkedList because only one 
+                                                                                                                            loop is necessary for comparing the elements between
+                                                                                                                            the 2 lists.
+                                                                                                                            
+void reverse()                                    O(n)                                O(n^2)                                reverse() is O(n) for the ArrayList because one loop 
+                                                                                                                            can be used to swap an element with its mirror oppposite, 
+                                                                                                                            where the mirror is located in the middle of the list. 
+                                                                                                                            It's O(n^2) for the LinkedList because one loop is used
+                                                                                                                            to set the pointer to the desired value which is nested
+                                                                                                                            in another loop that triggers this traverse until the list
+                                                                                                                            is reversed.
